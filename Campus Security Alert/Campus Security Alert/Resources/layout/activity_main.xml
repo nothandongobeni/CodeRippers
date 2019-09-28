@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+	android:background="#931D52"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<RelativeLayout
+		android:background="@drawable/cardview"
+		android:layout_margin="20dp"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	>
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:weightSum="100"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/SignUpLayout">
+			
+			<ImageView
+				android:id="@+id/iconUser"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:layout_marginTop="40dp"
+				android:backgroundTint="#931D52"
+				android:layout_gravity="center"
+				android:background="@mipmap/ic_launcher"
+                    
+				/>
+			<TextView
+				android:text="Create An Account"
+				android:gravity="center"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView1" />
+			<ScrollView
+				
+				android:layout_marginTop="7dp"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_weight="100"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:id="@+id/scrollView1">
+				<TableLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:stretchColumns ="1"
+					>
+					<android.support.design.widget.TextInputLayout
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/textInputLayout1">
+						<android.support.design.widget.TextInputEditText
+							android:layout_marginLeft="20dp"
+							android:layout_marginRight="20dp"
+							android:hint=" Full Names"
+							android:textColor="@android:color/black"
+							android:textColorHint="#931D52"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/RegFullNames" />
+					</android.support.design.widget.TextInputLayout>
+					
+					<android.support.design.widget.TextInputLayout
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/textInputLayout1">
+						<android.support.design.widget.TextInputEditText
+							android:layout_marginLeft="20dp"
+							android:layout_marginRight="20dp"
+							android:hint=" Cellphone"
+							android:inputType="phone"
+							android:maxLength="10"
+							android:textColor="@android:color/black"
+							android:textColorHint="#931D52"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/RegCellPhone" />
+					</android.support.design.widget.TextInputLayout>
+					<android.support.design.widget.TextInputLayout
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/textInputLayout1">
+						<android.support.design.widget.TextInputEditText
+							android:layout_marginLeft="20dp"
+							android:layout_marginRight="20dp"
+							android:hint=" Any Medical Record"
+							android:inputType="textEmailAddress"
+							android:textColor="@android:color/black"
+							android:textColorHint="#931D52"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/RegEmailAddress" />
+					</android.support.design.widget.TextInputLayout>
+
+
+					<android.support.design.widget.TextInputLayout
+						android:minWidth="25px"
+						android:minHeight="25px"
+						app:passwordToggleEnabled="true"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/textInputLayout1">
+						<android.support.design.widget.TextInputEditText
+							android:layout_marginLeft="20dp"
+							android:layout_marginRight="20dp"
+							android:hint=" Enter Password"
+                            android:password="true"
+							android:inputType="textPassword"
+							android:textColor="@android:color/black"
+							android:textColorHint="#931D52"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/RegPassword2" />
+					</android.support.design.widget.TextInputLayout>
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="SIGNUP"
+						android:textStyle="bold"
+						android:id="@+id/BtnSignUp"
+						android:layout_marginLeft="40dp"
+						android:layout_marginRight="40dp"
+						android:background="@drawable/button_style1"
+						android:textColor="@android:color/white"
+						/>
+					<TextView
+						android:text="Already have an account"
+						android:gravity="center"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_width="match_parent"
+						android:clickable="true"
+						android:layout_marginBottom="10dp"
+						android:textColor="@android:color/holo_blue_dark"
+						android:layout_height="wrap_content"
+						android:id="@+id/txtAlreadyHaveAcc" />
+				
+				</TableLayout>
+
+			</ScrollView>
+			
+			
+		</LinearLayout>
+				
+	
+	</RelativeLayout>
+	
+	
+
+</LinearLayout>

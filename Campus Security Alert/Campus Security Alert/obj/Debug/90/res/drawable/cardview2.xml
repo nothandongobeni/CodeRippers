@@ -1,0 +1,1 @@
+<!--  res/drawable/edittext_rounded_corners.xml --><shape android:thickness="5dp" xmlns:android="http://schemas.android.com/apk/res/android"><solid android:color="#931D52" /><corners android:topLeftRadius="8dp" android:bottomLeftRadius="8dp" android:topRightRadius="8dp" android:bottomRightRadius="8dp" /></shape>
